@@ -59,7 +59,7 @@ const WeatherApiApp = () => {
     const [ cityNotFound, setCityNotFound ] = useState(false);
     const [ loading, setLoading ] = useState(false);
     const [ error, setError ] = useState(null);
-    import SearchImg from '/img/search.png';
+    import SearchImg from '../img/search.png';
     
 // https://openweathermap.org/weather-conditions
     const weatherIconMap = {
