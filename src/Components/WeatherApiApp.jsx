@@ -59,6 +59,7 @@ const WeatherApiApp = () => {
     const [ cityNotFound, setCityNotFound ] = useState(false);
     const [ loading, setLoading ] = useState(false);
     const [ error, setError ] = useState(null);
+    import SearchImg from '../Components/img/search.png';
 // https://openweathermap.org/weather-conditions
     const weatherIconMap = {
         "01d": sun,
@@ -137,7 +138,7 @@ const WeatherApiApp = () => {
         value={citytext} 
         onKeyDown={handlekeydownenter} 
         />
-        <img src="../src/Components/img/search.png" alt="search" width="30px" className='m-2' onClick={() => search()} />
+        <img src={SearchImg} alt="search" width="30px" className='m-2' onClick={() => search()} />
         </div>
 
         {loading && <div>...Loading</div>}
