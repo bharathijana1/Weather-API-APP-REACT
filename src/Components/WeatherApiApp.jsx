@@ -6,6 +6,7 @@ import rain from '../Components/img/rain.png';
 import humidityimg from '../Components/img/humidity.png';
 import snowy from '../Components/img/snowy.png';
 import windimg from '../Components/img/wind.png';
+import SearchImg from '../Components/img/search.png';
 
 // https://api.openweathermap.org/data/2.5/weather?q=chennai&appid=7db7f4dc24f41ff2956b0ddce4ddf5da&units=metric
 // https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
@@ -59,7 +60,7 @@ const WeatherApiApp = () => {
     const [ cityNotFound, setCityNotFound ] = useState(false);
     const [ loading, setLoading ] = useState(false);
     const [ error, setError ] = useState(null);
-    import SearchImg from '../img/search.png';
+
     
 // https://openweathermap.org/weather-conditions
     const weatherIconMap = {
